@@ -1,8 +1,6 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
-// Standard binary search to find a key in a sorted subarray.
 int BS(vector<int>& nums , int key , int start , int end){
     // Loop until the search space is exhausted.
     while(start <= end){
