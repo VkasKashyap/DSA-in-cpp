@@ -2,30 +2,19 @@
 #include<vector>
 #include<cmath>
 using namespace std;
-
-// Finds all duplicate numbers in a given array.
 vector<int> findDuplicates(vector<int>& nums){
-    // Vector to store the duplicate numbers.
     vector<int> result;
     int n = nums.size();
-
-    // Iterate through the array.
     for(int i = 0 ; i < n ; ++i){
-        // Get the positive value of the current number.
         int num = abs(nums[i]);
-        // Calculate the index corresponding to the number.
         int index = num-1;
-
-        // If the value at the index is already negative, it's a duplicate.
         if(nums[index] < 0){
             result.push_back(num);
         }
-        // Otherwise, mark it as seen by making it negative.
         else{
             nums[index] = -nums[index];
         }
     }
-    // Return the list of duplicates.
     return result;
 }
 
