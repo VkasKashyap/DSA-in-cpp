@@ -13,8 +13,6 @@ int findUnique(vector<int>& nums){
         // The XOR operation cancels out duplicate numbers.
         ans = ans ^ nums[i];
     }
-    
-    // The final result is the unique element.
     return ans;
 }
 
