@@ -2,7 +2,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
 void function(vector<int>& candidates, int target, vector<vector<int>>& ans, int index, vector<int>& ds){
         if(target == 0){
             ans.push_back(ds);
@@ -15,8 +14,7 @@ void function(vector<int>& candidates, int target, vector<vector<int>>& ans, int
             function(candidates,target-candidates[i],ans,i+1,ds);
             ds.pop_back();
         }
-    }
-
+}
 vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
     sort(candidates.begin(),candidates.end());
     vector<vector<int>> ans;
@@ -24,7 +22,6 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
     function(candidates,target,ans,0,ds);
     return ans;
 }
-
 int main(){
     vector<int> candidates = {10,1,2,7,6,1,5};
     int target = 8;
