@@ -1,9 +1,6 @@
-// Include required libraries
 #include<iostream>
 #include<vector>
 #include<algorithm>
-
-// Use standard namespace
 using namespace std;
 
 // Function to find all pairs that sum to S
