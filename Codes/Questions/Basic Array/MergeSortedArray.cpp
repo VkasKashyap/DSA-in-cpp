@@ -11,8 +11,6 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n){
     int i = m-1;    // i: points to the last valid element of nums1
     int j = n-1;    // j: points to the last element of nums2
     int k = m+n-1;  // k: points to the last position in nums1 where the merged element will be placed
-
-    // Merge from the end of both arrays to avoid overwriting elements in nums1
     while(i >= 0 && j >= 0){
         if(nums1 [i] > nums2[j]){
             nums1[k] = nums1[i]; // If nums1's element is larger, place it at k
