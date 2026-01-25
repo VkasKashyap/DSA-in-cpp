@@ -1,10 +1,6 @@
-// Include headers for input/output and vectors
 #include <iostream>
 #include <vector>
-// Use the standard namespace
 using namespace std;
-
-// Function to search for a key in a vector
 bool Search(vector<int>& nums, int key) {
     // Loop through each element of the vector
     for (size_t i = 0; i < nums.size(); i++) { // Using size_t to avoid signed/unsigned warning
