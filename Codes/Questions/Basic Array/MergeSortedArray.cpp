@@ -1,11 +1,6 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
-/*
-Merges two sorted arrays, nums2 into nums1, in-place.
-Assumes nums1 has enough space (m + n) to accommodate all elements.
-*/
 void merge(vector<int>& nums1, int m, vector<int>& nums2, int n){
 
     int i = m-1;    // i: points to the last valid element of nums1
