@@ -10,7 +10,6 @@ bool Search(vector<int>& nums, int key) {
             return true;
         }
     }
-    // Return false (0) if the loop completes without finding the key
     return false;
 }
 
