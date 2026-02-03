@@ -1,9 +1,6 @@
-// Include headers for input/output, vector, and the swap function
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
-// Use the standard namespace
 using namespace std;
 
 // Function to reverse a vector in-place
