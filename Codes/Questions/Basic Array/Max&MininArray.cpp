@@ -8,17 +8,12 @@ using namespace std;
 
 // Function to find the maximum value in a vector
 int getMax(vector<int>& nums) {
-    // Initialize maxi to the smallest possible integer value (FIXED)
     int maxi = INT_MIN;
-    // Loop through each element in the vector
     for (int i = 0; i < nums.size(); i++) {
-        // If the current element is greater than the current max...
         if (nums[i] > maxi) {
-            // ...update the max
             maxi = nums[i];
         }
     }
-    // Return the final maximum value
     return maxi;
 }
 
