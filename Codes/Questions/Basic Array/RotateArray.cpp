@@ -14,9 +14,7 @@ void reverse(vector<int>& nums, int start, int end) {
 
 
 void rotate(vector<int>& nums, int k) {
-    int n = nums.size(); // Get the size of the vector
-    // Handle edge cases:
-    // If the vector is empty or k is a multiple of n (effectively no rotation), return.
+    int n = nums.size();
     if (n == 0 || k % n == 0) return;
 
     // Normalize k:
